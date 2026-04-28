@@ -23,4 +23,4 @@ A static, single-page website for the **BuildHypervisor** project.
 ## Live URL
 
 Your website will be available at:  
-`https://github.com/BxtGeek/BuildHypervisor-website`
+`https://bxtgeek.github.io/BuildHypervisor-website/`
