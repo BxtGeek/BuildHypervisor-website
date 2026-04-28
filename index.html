@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="BuildHypervisor: Build a production-ready hypervisor using Linux, QEMU, KVM, and multiple storage architectures."
+    />
+    <title>BuildHypervisor | Educational Hypervisor Project</title>
+    <style>
+      :root {
+        --bg: #0b1020;
+        --panel: #121933;
+        --text: #ecf1ff;
+        --muted: #a4b0d3;
+        --primary: #6ea8fe;
+        --secondary: #9be9a8;
+        --border: #2a3566;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        color: var(--text);
+        background: radial-gradient(circle at top, #1b2650, var(--bg) 45%);
+        line-height: 1.6;
+      }
+
+      .container {
+        width: min(1000px, 92%);
+        margin: 0 auto;
+      }
+
+      header {
+        padding: 5rem 0 2.5rem;
+        text-align: center;
+      }
+
+      .badge {
+        display: inline-block;
+        background: rgba(110, 168, 254, 0.15);
+        color: var(--primary);
+        border: 1px solid rgba(110, 168, 254, 0.35);
+        border-radius: 999px;
+        padding: 0.35rem 0.9rem;
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 1.2;
+        margin: 0.4rem 0 1rem;
+      }
+
+      .subtitle {
+        max-width: 760px;
+        margin: 0 auto;
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+
+      .actions {
+        display: flex;
+        justify-content: center;
+        gap: 0.9rem;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+      }
+
+      .btn {
+        text-decoration: none;
+        color: #08122f;
+        background: var(--primary);
+        padding: 0.75rem 1.1rem;
+        border-radius: 10px;
+        font-weight: 700;
+        border: 1px solid transparent;
+      }
+
+      .btn.secondary {
+        background: transparent;
+        color: var(--text);
+        border-color: var(--border);
+      }
+
+      main {
+        padding: 1rem 0 4rem;
+      }
+
+      .card {
+        background: rgba(18, 25, 51, 0.8);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 1.4rem;
+        backdrop-filter: blur(4px);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      h2 {
+        margin-top: 0;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 1.1rem;
+      }
+
+      footer {
+        border-top: 1px solid var(--border);
+        padding: 1.2rem 0 2.2rem;
+        color: var(--muted);
+        text-align: center;
+        font-size: 0.92rem;
+      }
+
+      .repo {
+        word-break: break-all;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container">
+      <span class="badge">Educational Project</span>
+      <h1>BuildHypervisor</h1>
+      <p class="subtitle">
+        Build a production-ready hypervisor using Linux, QEMU, KVM, and multiple storage architectures.
+        This project is for educational purposes only and is based on open-source technologies and
+        industry-standard concepts.
+      </p>
+      <div class="actions">
+        <a class="btn" href="https://github.com/BxtGeek/BuildHypervisor" target="_blank" rel="noopener noreferrer">Checkout the Project</a>
+        <a class="btn secondary" href="https://github.com/BxtGeek/BuildHypervisor" target="_blank" rel="noopener noreferrer">⭐ Support with a Star</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>Why BuildHypervisor?</h2>
+        <div class="grid">
+          <article>
+            <h3>Hands-On Learning</h3>
+            <p>Understand virtualization internals by building with practical, real-world tooling.</p>
+          </article>
+          <article>
+            <h3>Modern Stack</h3>
+            <p>Explore Linux, QEMU, and KVM with architecture patterns aligned to production environments.</p>
+          </article>
+          <article>
+            <h3>Storage Focus</h3>
+            <p>Compare and apply multiple storage architectures in hypervisor workflows.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="card" style="margin-top: 1rem">
+        <h2>Project Links</h2>
+        <ul>
+          <li>
+            GitHub Repository:
+            <a class="repo" href="https://github.com/BxtGeek/BuildHypervisor" target="_blank" rel="noopener noreferrer">https://github.com/BxtGeek/BuildHypervisor</a>
+          </li>
+          <li>
+            Like this project? Please give it a <strong>star</strong> on GitHub to support the work.
+          </li>
+          <li>
+            Want to support directly?
+            <a href="https://www.buymeacoffee.com/bxtgeek" target="_blank" rel="noopener noreferrer">☕ Buy me a coffee</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        © <span id="year"></span> BuildHypervisor. Educational use only.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
